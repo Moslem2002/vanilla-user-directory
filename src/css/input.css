@@ -1,0 +1,13 @@
+@font-face {
+  font-family: FiraCode;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/font/FiraCode-Regular.ttf");
+}
+
+@import "tailwindcss";
+
+@theme {
+  --font-FiraCode: "FiraCode";
+}
