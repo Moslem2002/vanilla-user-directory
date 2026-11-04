@@ -3,7 +3,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("/font/FiraCode-Regular.ttf");
+  src: url("../assets/font/FiraCode-Regular.ttf");
 }
 
 @import "tailwindcss";
