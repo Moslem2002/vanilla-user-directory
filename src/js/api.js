@@ -8,6 +8,6 @@ export default async function Users() {
     const data = await res.json();
     return data;
   } catch (err) {
-    console.log("Error", err.message);
+    return null;
   }
 }

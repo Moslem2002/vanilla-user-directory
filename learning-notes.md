@@ -20,3 +20,9 @@ Today, I worked on fetching data and error handling:
 - `classList.add`: The `classList` property returns the CSS classnames of an element.`add` Adds one or more tokens to the list. It is important that I must use `""` and `,` for each token in list! for example, `"bg-green-700", "rounded-lg", "py-1.5", "px-3"`.
 - `innerHTML`: The innerHTML property sets or returns the HTML content (inner HTML) of an element.
 - `appendChild`: The `appendChild()` method appends a node (element) as the last child of an element.
+
+## Day 04 - 06/Nov/2026 - UI States (Loading & Error Handling)
+
+Today, the task was easy and I successfully implemented error handling.
+At first, the program shows a loading state and pauses for 3 seconds using `setTimeout`.
+If the user data is fetched successfully, it renders the cards; otherwise, it displays an error message.
