@@ -26,3 +26,12 @@ Today, I worked on fetching data and error handling:
 Today, the task was easy and I successfully implemented error handling.
 At first, the program shows a loading state and pauses for 3 seconds using `setTimeout`.
 If the user data is fetched successfully, it renders the cards; otherwise, it displays an error message.
+
+## Day 05 - 07/Nov/2026 - Live Search Feature
+
+Today, I completed the project by adding a Live Search feature.
+As the user types into the search box, the user list is filtered in real-time by name, email, and city. If no matching users are found, an error message such as 'No users found' is displayed.
+
+- To achieve this, I used `addEventListener` with the `'input'` event to capture user input dynamically.
+- Then, I used the `filter()` method on the user data combined with `includes()` to handle the filtering logic.
+- Finally, I rendered the filtered results into `li` elements and implemented error handling for empty states.
