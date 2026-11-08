@@ -40,18 +40,3 @@ As the user types into the search box, the user list is filtered in real-time by
 
 Today, I review my codes and I understand that I have a piece of repetitive code. So, I reduce it by a func and call it in that old place.
 the project overed and I write the best code and it has good performance.
-
-After two weeks, I’m back ☺️.
-
-During this time, I reviewed most of the JavaScript I’d learned before. Along with the review, I built a mini-project: a Vanilla User Directory. It fetches user information from an API, and you can filter the list live by name, email, and city.
-
-The filtering part was so much fun that I decided to break down how it works:
-After getting the data from the API and saving it in a variable, I even added a `setTimeout()` to handle UI states (like Loading, Error, etc.).
-Then, using the `forEach()` method, I looped through the array, grabbed the name, email, and city, and injected them into `<li>` elements created dynamically with `document.createElement()`. That’s it!
-
-It was the best experience after 3 months of vibe coding.
-
-If you want to check it out, the repository link is below 👇
-I’d be happy to hear your thoughts on this project!
-
-GitHub link: https://github.com/Moslem2002/vanilla-user-directory.git
