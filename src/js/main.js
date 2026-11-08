@@ -11,6 +11,19 @@ status.classList.add("font-bold");
 status.innerHTML = "Loading...";
 mainContainer.appendChild(status);
 
+// CREATE CARD:
+const createCardElement = function (user) {
+  const card = document.createElement("li");
+
+  card.classList.add("bg-sky-500", "rounded-lg", "py-1.5", "px-3");
+
+  card.innerHTML = `
+        <h3 class="">name: ${user.name}</h3>
+        <p class="">email: ${user.email}</p>
+        <p class="">address: ${user.address.city}</p>`;
+  return card;
+};
+
 // RENDERING USERS:
 async function renderUsers() {
   const users = await Users();
@@ -18,14 +31,7 @@ async function renderUsers() {
   setTimeout(() => {
     if (users) {
       users.forEach((user) => {
-        const card = document.createElement("li");
-
-        card.classList.add("bg-sky-500", "rounded-lg", "py-1.5", "px-3");
-
-        card.innerHTML = `
-        <h3 class="">name: ${user.name}</h3>
-        <p class="">email: ${user.email}</p>
-        <p class="">address: ${user.address.city}</p>`;
+        const card = createCardElement(user);
         container.appendChild(card);
       });
       status.classList.add("hidden");
@@ -53,14 +59,7 @@ async function renderUsers() {
       status.innerHTML = "No users found";
     } else {
       filteredUsers.forEach((user) => {
-        const card = document.createElement("li");
-
-        card.classList.add("bg-sky-500", "rounded-lg", "py-1.5", "px-3");
-
-        card.innerHTML = `
-        <h3 class="">name: ${user.name}</h3>
-        <p class="">email: ${user.email}</p>
-        <p class="">address: ${user.address.city}</p>`;
+        const card = createCardElement(user);
         container.appendChild(card);
         status.classList.add("hidden");
       });

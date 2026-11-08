@@ -35,3 +35,8 @@ As the user types into the search box, the user list is filtered in real-time by
 - To achieve this, I used `addEventListener` with the `'input'` event to capture user input dynamically.
 - Then, I used the `filter()` method on the user data combined with `includes()` to handle the filtering logic.
 - Finally, I rendered the filtered results into `li` elements and implemented error handling for empty states.
+
+## Day 06 - 08/Nov/2026 - Testing & Code Review
+
+Today, I review my codes and I understand that I have a piece of repetitive code. So, I reduce it by a func and call it in that old place.
+the project overed and I write the best code and it has good performance.
